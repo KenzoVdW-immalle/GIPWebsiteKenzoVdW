@@ -1,18 +1,27 @@
 h1 {
-	background-color: orange;
-	color: gray;
-	margin: 0px;
 
+	color: white;
+	margin: 0px;
+-ms-grid-column-span: 5; -ms-grid-row: 1;
 
 }
 
 body {
 	text-align: center;
 	background-color: lightblue;
+	display: -ms-grid;
+	-ms-grid-columns: 200px 10px 1fr 1fr 10px 200px;
+	-ms-grid-rows: 100px 10px 1fr 10px 100px;
+	margin: 0px;
+	height: 100vh;
+	min-width: 400px
 }
 p {
-	margin-bottom: 800px;
+	min-height: 20px;
+	margin-bottom: 70vh;
+	-ms-grid-column: 3; -ms-grid-row: 3;
 }
 footer {
-	margin-top: 20px;
+	margin-top: 0vh;
+	-ms-grid-row: 5; -ms-grid-column-span: 5;
 }
