@@ -1,4 +1,18 @@
-h1.{
+h1 {
+	background-color: orange;
+	color: gray;
+	margin: 0px;
+
+
+}
+
+body {
 	text-align: center;
-	background-color: red;
+	background-color: lightblue;
+}
+p {
+	margin-bottom: 800px;
+}
+footer {
+	margin-top: 20px;
 }
