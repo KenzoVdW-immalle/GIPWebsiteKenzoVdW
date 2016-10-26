@@ -1,9 +1,34 @@
 h1 {
-
 	color: white;
-	margin: 0px;
 -ms-grid-column-span: 5; -ms-grid-row: 1;
+position: absolute;
+text-align: center;
+line-height: inherit;
+margin: 0px;
+width: 100%;
+}
+.wrapper {
+	text-align: left;
+}
+.button-Home{
+	color: black;
+	border-radius:18px;
+	text-shadow: 0 1px 7px rgba(0, 0, 0, 0.7);
+	margin-right: 10px;
+	height:30px;
+	width: 80px;
+	font-size:100%;
+	background-color: orange;
+	float: left;
 
+
+
+}
+img {
+	overflow:hidden;
+	z-index: -1;
+	margin: 0px;
+	width: 100%;
 }
 
 body {
@@ -18,8 +43,9 @@ body {
 }
 p {
 	min-height: 20px;
-	margin-bottom: 70vh;
+	margin-bottom: 33vh;
 	-ms-grid-column: 3; -ms-grid-row: 3;
+
 }
 footer {
 	margin-top: 0vh;
