@@ -1,28 +1,40 @@
+*{
+box-sizing: border-box;
+}
+.header{
+	padding: 15px;
+}
 h1 {
 	color: white;
--ms-grid-column-span: 5; -ms-grid-row: 1;
 position: absolute;
 text-align: center;
 line-height: inherit;
 margin: 0px;
 width: 100%;
+line-height: 2;
 }
 .wrapper {
 	text-align: left;
+	width: 150px;
 }
-.button-Home{
+.button{
+	float: left;
 	color: black;
-	border-radius:18px;
-	text-shadow: 0 1px 7px rgba(0, 0, 0, 0.7);
+	border-radius:8px;
+	text-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
 	margin-right: 10px;
 	height:30px;
-	width: 80px;
-	font-size:100%;
+	width: 150px;
 	background-color: orange;
-	float: left;
-
-
-
+	cursor: pointer;
+	border: 3px;
+	margin-bottom: 2px;
+	margin-top: 5px;
+	transition-duration: 0.3s;
+}
+.button:hover{
+	background-color: white;
+	color: orange;
 }
 img {
 	overflow:hidden;
@@ -32,22 +44,18 @@ img {
 }
 
 body {
-	text-align: center;
 	background-color: lightblue;
-	display: -ms-grid;
-	-ms-grid-columns: 200px 10px 1fr 1fr 10px 200px;
-	-ms-grid-rows: 100px 10px 1fr 10px 100px;
 	margin: 0px;
 	height: 100vh;
 	min-width: 400px
+	float: left;
 }
 p {
 	min-height: 20px;
 	margin-bottom: 33vh;
-	-ms-grid-column: 3; -ms-grid-row: 3;
 
 }
 footer {
+	text-align: center;
 	margin-top: 0vh;
-	-ms-grid-row: 5; -ms-grid-column-span: 5;
 }
