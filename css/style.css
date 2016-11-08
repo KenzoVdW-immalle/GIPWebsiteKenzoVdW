@@ -41,6 +41,7 @@ img {
 	z-index: -1;
 	margin: 0px;
 	width: 100%;
+	margin-bottom: 5px;
 }
 
 body {
@@ -52,10 +53,21 @@ body {
 }
 p {
 	min-height: 20px;
-	margin-bottom: 33vh;
+	margin-bottom: 3vh;
+    text-align: justify;
+	margin-bottom: 0px;
 
 }
+
 footer {
 	text-align: center;
 	margin-top: 0vh;
 }
+details{
+	text-align:center;
+}
+summary{
+	text-align: left;
+	margin-bottom: 1px;
+}
+
