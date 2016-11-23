@@ -6,6 +6,7 @@
     width: 100%;
     min-height: 1px;
     float:left;
+    font-family: 'Merienda One', cursive;
 }
 .col{
   height: 10vw;
@@ -38,13 +39,11 @@ background-color: red;
         margin: 5px 0px 5px 0px;
     }
 }
+@media only screen and (max-width: 585px) {
+body { font-size:70%;}
+}
 .col.one{width: 30%;}
 .col.two{width: 65%;}
-body {
-  background-color: red;
-}
-
-
 
 .header{
 	padding: 15px;
@@ -57,7 +56,12 @@ line-height: inherit;
 margin: 0px;
 width: 100%;
 line-height: 2;
+font-family: 'Merienda One', cursive;
 }
+h3{
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
 .wrapper {
 	text-align: left;
 	width: 150px;
@@ -101,6 +105,7 @@ p {
 	min-height: 20px;
 	margin-bottom: 3vh;
 	text-align: left;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
 
 footer {
@@ -114,4 +119,5 @@ details{
 summary{
 	text-align: left;
 	margin-bottom: 1px;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
