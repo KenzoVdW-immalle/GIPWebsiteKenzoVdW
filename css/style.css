@@ -16,7 +16,6 @@
     margin-right: 5%;
     display:inline-block;
     float: left;
-
 }
 .col.four{
   width: 20%;
@@ -35,16 +34,14 @@ background-color: red;
 }
 @media (max-width: 470px){
     .col{
-        width: 100% !important;
+        width: 90% !important;
         margin: 5px 0px 5px 0px;
     }
 }
 @media only screen and (max-width: 585px) {
-body { font-size:70%;}
+body { font-size:60%;}
 }
-.col.one{width: 30%;}
-.col.two{width: 65%;}
-
+.col.one{width: 50%;}
 .header{
 	padding: 15px;
 }
@@ -58,34 +55,9 @@ width: 100%;
 line-height: 2;
 font-family: 'Merienda One', cursive;
 }
-h3{
-  font-family: 'Goudy Bookletter 1911', serif;
-}
 
-.wrapper {
-	text-align: left;
-	width: 150px;
-	float: left;
-	margin-right: 10px;
-}
-.button{
-	float: left;
-	color: black;
-	border-radius:8px;
-	text-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
-	margin-right: 10px;
-	height:30px;
-	width: 150px;
-	background-color: orange;
-	cursor: pointer;
-	border: 3px;
-	margin-bottom: 2px;
-	margin-top: 5px;
-	transition-duration: 0.3s;
-}
-.button:hover{
-	background-color: white;
-	color: orange;
+h3{
+ font-family: 'Goudy Bookletter 1911', cursive;
 }
 img {
 	overflow:hidden;
@@ -96,16 +68,17 @@ img {
 }
 
 body {
-	background-color: lightblue;
+	background-color: white;
 	margin: 0px;
 	height: 100vh;
-	min-width: 400px;
+	min-width: 300px;
 }
 p {
 	min-height: 20px;
 	margin-bottom: 3vh;
 	text-align: left;
   font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 150%;
 }
 
 footer {
@@ -115,9 +88,11 @@ footer {
 }
 details{
 	text-align: left;
+  font-size: 150%;
 }
 summary{
 	text-align: left;
 	margin-bottom: 1px;
   font-family: 'Goudy Bookletter 1911', serif;
+  margin-top: 50px;
 }
