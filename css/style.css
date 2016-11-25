@@ -9,7 +9,6 @@
     font-family: 'Merienda One', cursive;
 }
 .col{
-  height: 10vw;
     min-height: 80px;
     border-radius: 8px;
     margin-left: 0%;
@@ -17,14 +16,32 @@
     display:inline-block;
     float: left;
 }
+.col.one{
+  font-size: 100%;
+  min-height: 50px;
+}
+.col.two:first-child,
+.col.two:last-child{
+  width: 20%;
+  background-color: transparent;
+}
+.col.two{
+  background-color: #191919;
+  color: #DFE2DB;
+  text-align: center;
+  font-size: 70%;
+  width: 50%;
+}
 .col.four{
   width: 20%;
   background-color: red;
   text-align: center;
+  min-height: 10vw;
 }
 .col.five{
   width: 20%;
 background-color: red;
+min-height: 10vw;
 }
 .col:first-child{
     margin-left: 0px;
@@ -54,6 +71,7 @@ margin: 0px;
 width: 100%;
 line-height: 2;
 font-family: 'Merienda One', cursive;
+height: 100px;
 }
 
 h3{
