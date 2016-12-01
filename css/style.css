@@ -6,7 +6,7 @@
     width: 100%;
     min-height: 1px;
     float:left;
-    font-family: 'Merienda One', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 .col{
     min-height: 80px;
@@ -27,7 +27,7 @@
   color: white;
 }
 .itbiography{
-  text-align: center;
+  text-align: left;
   font-size: 120%;
   margin: 30px;
 }
@@ -42,10 +42,12 @@
 background-color: red;
 min-height: 10vw;
 }
-.col:first-child{
+.col.four:first-child,
+.col.five:first-child{
     margin-left: 0%;
 }
-.col:last-child{
+.col.four:last-child,
+.col.five:last-child{
     margin-right: 0px;
 }
 @media (max-width: 470px){
@@ -68,12 +70,12 @@ line-height: inherit;
 margin: 0px;
 width: 100%;
 line-height: 2;
-font-family: 'Merienda One', cursive;
+font-family: 'Open Sans', sans-serif;
 height: 100px;
 }
 
 h3{
- font-family: 'Goudy Bookletter 1911', cursive;
+ font-family: 'Open Sans', sans-serif;
 }
 img {
 	overflow:hidden;
@@ -101,7 +103,7 @@ footer {
 	text-align: center;
 	margin-top: 30vh;
 	margin-bottom: 10px;
-  font-family:'Merienda One', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 details{
 	text-align: left;
@@ -110,7 +112,7 @@ details{
 summary{
 	text-align: left;
 	margin-bottom: 1px;
-  font-family: 'Goudy Bookletter 1911', serif;
+font-family: 'Fjalla One', sans-serif;
   margin-top: 50px;
   font-size: 120%;
   background-color: grey;
@@ -119,8 +121,9 @@ summary{
 }
  .welkomstwoord{
   background-color: lightblue;
-  margin: 5px;
   border-radius: 5px;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-top: 0;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
