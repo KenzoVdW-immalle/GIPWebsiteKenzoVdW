@@ -1,6 +1,5 @@
-
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
+google.charts.load("current", {packages: ["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
@@ -16,9 +15,8 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
         chart.draw(data, options);
       }
-
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart1);
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart1);
       function drawChart1() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
@@ -75,4 +73,4 @@
                     var chart = new google.visualization.PieChart(document.getElementById('piechart_3d4'));
                     chart.draw(data, options);
                   }
-                  window.addEventListener("resize", resizeScreen);
+window.onresize = function(){ location.reload(); }
