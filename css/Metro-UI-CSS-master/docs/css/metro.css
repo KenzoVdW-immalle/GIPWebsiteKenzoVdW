@@ -3360,18 +3360,6 @@ a.tag {
   float: left;
   background-color: #ffffff;
 }
-@media (max-width: 500px){
-  .m-menu > li, .m-menu-item
- {
-    width: 120px;
-  }
-  .m-menu-item > li:first-child{width: 80px;}
-}
-
-
-
-
-
 .m-menu > li:hover,
 .m-menu .m-menu-item:hover {
   background-color: #59cde2;
@@ -3386,7 +3374,7 @@ a.tag {
   color: inherit;
 }
 .m-menu > li:first-child,
-    .m-menu .m-menu-item:first-child {
+.m-menu .m-menu-item:first-child {
   margin-left: 0;
 }
 .m-menu > li > a,
