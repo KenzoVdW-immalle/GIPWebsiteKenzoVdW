@@ -3337,7 +3337,7 @@ a.tag {
   border-collapse: separate;
   text-align: left;
   display: block;
-  height: auto ;
+  height: 52px;
   position: relative;
   background-color: #ffffff;
   color: #1d1d1d;
@@ -3345,6 +3345,7 @@ a.tag {
   list-style: none inside none;
   margin: 0;
   padding: 0;
+  width: 101%;
 }
 .m-menu:before,
 .m-menu:after {
