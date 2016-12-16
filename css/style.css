@@ -84,13 +84,13 @@ footer {
 
 .col.four{
   width: 20%;
-  background-color: red;
+	background-color: rgb(244, 66, 66);
   text-align: center;
   min-height: 10vw;
 }
 .col.five{
   width: 20%;
-background-color: red;
+background-color: rgb(244, 66, 66);
 min-height: 10vw;
 }
 .col.six{
