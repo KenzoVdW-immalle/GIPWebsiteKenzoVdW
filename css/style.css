@@ -9,6 +9,12 @@ line-height: 2;
 font-family: 'Open Sans', sans-serif;
 font-size: 5vw;
 }
+.huisstijl{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	height: 520px;
+}
 img {
 	overflow:hidden;
 	z-index: -1;
