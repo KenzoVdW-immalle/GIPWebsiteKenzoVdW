@@ -26,9 +26,7 @@ $.widget( "metro.fitImage" , {
             }
         });
 
-        $("<img/>")
-            .attr('src', src)
-            .load(function(){
+        $("<img/>").attr('src', src).on('load', function(){
                 i_w = this.width;
                 i_h = this.height;
             }).remove();
@@ -76,7 +74,7 @@ $.widget( "metro.fitImage" , {
         });
 
         if (o.frameColor !== 'default') {
-            if (o.frameColor.isUrl()) {
+            if (metroUtils.isColor(o.frameColor)) {
                 image_frame.css('background-color', o.frameColor);
             } else {
                 image_frame.addClass(o.frameColor);

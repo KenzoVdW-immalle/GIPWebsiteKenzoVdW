@@ -1,5 +1,27 @@
 # Changelog 
 
+## 3.0.17
+* fix hotkeys init error 
+
+## 3.0.16
+* fix metro-icons.css
+* fix calendar events
+* Small fix for mif-* class
+* fix dialogs position
+* global dialog function moved to window.metroDialog object and renamed (open, close, toggle, create), see docs
+* add $.Dialog method
+* fix appbar and fitImage for jquery 3.1.0
+* fix validator issues #835, #837, #839
+* small fix for accordion frames padding 
+* upd countdown: 4 digits for days
+* add micro template engine
+* fix validator for issue #869
+* fix isColor moved to metroUtils issue #872
+* fix anchor as buttons issue #868
+* rem close charms on document click (for issue #884)
+* add object metroCharm and $.Charm with methods: isOpened, show, hide(close), toggle
+* add donut chart
+
 ## 3.0.15
 * remove re-init for old browsers
 * METRO_AUTO_REINIT now deprecated

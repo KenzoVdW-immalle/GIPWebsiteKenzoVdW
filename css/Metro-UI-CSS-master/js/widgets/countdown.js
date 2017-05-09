@@ -96,7 +96,11 @@ $.widget( "metro.countdown" , {
             p = $("<div/>").addClass('part ' + v).attr('data-day-text', o.labels[v]).appendTo(element);
             $("<div/>").addClass('digit').appendTo(p);
             $("<div/>").addClass('digit').appendTo(p);
-            if (o.labelColor.isColor()) {
+            if (v === 'days') {
+                $("<div/>").addClass('digit').appendTo(p);
+                $("<div/>").addClass('digit').appendTo(p);
+            }
+            if (metroUtils.isColor(o.labelColor)) {
                 p.css({
                     color: o.labelColor
                 });
@@ -104,7 +108,7 @@ $.widget( "metro.countdown" , {
                 p.addClass(o.labelColor);
             }
 
-            if (o.backgroundColor.isColor()) {
+            if (metroUtils.isColor(o.backgroundColor)) {
                 p.find('.digit').css({
                     background: o.backgroundColor
                 });
@@ -112,7 +116,7 @@ $.widget( "metro.countdown" , {
                 p.find('.digit').addClass(o.backgroundColor);
             }
 
-            if (o.digitColor.isColor()) {
+            if (metroUtils.isColor(o.digitColor)) {
                 p.find('.digit').css({
                     color: o.digitColor
                 });
@@ -122,7 +126,7 @@ $.widget( "metro.countdown" , {
 
             if (v !== 'seconds') {
                 d = $("<div/>").addClass("divider").text(':').appendTo(element);
-                if (o.dividerColor.isColor()) {
+                if (metroUtils.isColor(o.dividerColor)) {
                     d.css({'color': o.dividerColor});
                 } else {
                     d.addClass(o.dividerColor);
@@ -219,25 +223,69 @@ $.widget( "metro.countdown" , {
 
     _update: function(part, value){
         var element = this.element;
-        var major_value = Math.floor(value/10)%10;
-        var minor_value = value%10;
-        var major_digit, minor_digit;
 
-        major_digit = element.find("."+part+" .digit:eq(0)");
-        minor_digit = element.find("."+part+" .digit:eq(1)");
+        if (part == 'days') {
+            var value1 = Math.floor(value/1000)%10;
+            var value2 = Math.floor(value/100)%10;
+            var value3 = Math.floor(value/10)%10;
+            var value4 = value%10;
+            var digit1, digit2, digit3, digit4;
 
-        if (minor_value !== parseInt(minor_digit.text())) {
-            minor_digit.toggleClass('scaleIn');
-            setTimeout(function(){
-                minor_digit.text(minor_value).toggleClass('scaleIn');
-            }, 500);
+            digit1 = element.find("."+part+" .digit:eq(0)");
+            digit2 = element.find("."+part+" .digit:eq(1)");
+            digit3 = element.find("."+part+" .digit:eq(2)");
+            digit4 = element.find("."+part+" .digit:eq(3)");
+
+            if (value1 !== parseInt(digit1.text())) {
+                digit1.toggleClass('scaleIn');
+                setTimeout(function(){
+                    digit1.text(value1).toggleClass('scaleIn');
+                }, 500);
+            }
+
+            if (value2 !== parseInt(digit2.text())) {
+                digit2.toggleClass('scaleIn');
+                setTimeout(function(){
+                    digit2.text(value2).toggleClass('scaleIn');
+                }, 500);
+            }
+
+            if (value3 !== parseInt(digit3.text())) {
+                digit3.toggleClass('scaleIn');
+                setTimeout(function(){
+                    digit3.text(value3).toggleClass('scaleIn');
+                }, 500);
+            }
+
+            if (value4 !== parseInt(digit4.text())) {
+                digit4.toggleClass('scaleIn');
+                setTimeout(function(){
+                    digit4.text(value4).toggleClass('scaleIn');
+                }, 500);
+            }
+
+        } else {
+            var major_value = Math.floor(value/10)%10;
+            var minor_value = value%10;
+            var major_digit, minor_digit;
+
+            major_digit = element.find("."+part+" .digit:eq(0)");
+            minor_digit = element.find("."+part+" .digit:eq(1)");
+
+            if (minor_value !== parseInt(minor_digit.text())) {
+                minor_digit.toggleClass('scaleIn');
+                setTimeout(function(){
+                    minor_digit.text(minor_value).toggleClass('scaleIn');
+                }, 500);
+            }
+            if (major_value !== parseInt(major_digit.text())) {
+                major_digit.toggleClass('scaleIn');
+                setTimeout(function(){
+                    major_digit.text(major_value).toggleClass('scaleIn');
+                }, 500);
+            }
         }
-        if (major_value !== parseInt(major_digit.text())) {
-            major_digit.toggleClass('scaleIn');
-            setTimeout(function(){
-                major_digit.text(major_value).toggleClass('scaleIn');
-            }, 500);
-        }
+
     },
 
     _stop: function(){

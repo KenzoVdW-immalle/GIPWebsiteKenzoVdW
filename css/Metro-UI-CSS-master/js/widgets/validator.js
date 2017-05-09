@@ -41,28 +41,29 @@ $.widget( "metro.validator" , {
             return val.trim().length <= len;
         },
         min: function(val, min_value){
+
             if (min_value == undefined || isNaN(min_value)) {
                 return false;
             }
-            if (val.trim() === "") {
+            if (!this.number(val)) {
                 return false;
             }
             if (isNaN(val)) {
                 return false;
             }
-            return val >= min_value;
+            return Number(val) >= Number(min_value);
         },
         max: function(val, max_value){
             if (max_value == undefined || isNaN(max_value)) {
                 return false;
             }
-            if (val.trim() === "") {
+            if (!this.number(val)) {
                 return false;
             }
             if (isNaN(val)) {
                 return false;
             }
-            return val <= max_value;
+            return Number(val) <= Number(max_value);
         },
         email: function(val){
             return /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(val);
@@ -141,7 +142,7 @@ $.widget( "metro.validator" , {
         $(window).scroll(function(e){
             var st = $(this).scrollTop();
             var delta = isNaN(st - this._scroll) ? 0 : st - this._scroll;
-            $(".validator-hint.hint2").css({
+            $(".validator-hint.hint2:not(.line)").css({
                 top: '-='+delta
             });
             this._scroll = st;
@@ -177,18 +178,24 @@ $.widget( "metro.validator" , {
         $.each(inputs, function(i, v){
             var this_result = true;
             var input = $(v);
-            var func = input.data('validateFunc') != undefined ? String(input.data('validateFunc')).split(",") : [],
-                arg = input.data('validateArg') != undefined ? String(input.data('validateArg')).split(",") : [];
+            var func = [], arg = [];
 
-            console.log(input.data('validateArg'));
+            func = input.data('validateFunc') != undefined ? String(input.data('validateFunc')).split(",") : [];
+            $.each(func, function(i, v){
+                func[i] = String(func[i]).trim();
+            });
+
+            if (func.indexOf('pattern') !== -1) {
+                arg.push(String(input.data('validateArg')));
+            } else {
+                arg  = input.data('validateArg') != undefined ? String(input.data('validateArg')).split(",") : [];
+            }
 
             $.each(func, function(i, func_name){
                 if (!this_result) return;
                 var _args = arg[i] != undefined ? arg[i] : false;
                 this_result = that.funcs[func_name.trim()](input.val(), _args);
             });
-
-//            this_result = that.funcs[func](input.val(), arg);
 
             if (!this_result) {
                 if (typeof o.onErrorInput === 'function') {
@@ -297,13 +304,13 @@ $.widget( "metro.validator" , {
             'min-width': o.hintSize
         });
 
-        if (background.isColor()) {
+        if (metroUtils.isColor(background)) {
             hint.css('background-color', background);
         } else {
             hint.addClass(background);
         }
 
-        if (color.isColor()) {
+        if (metroUtils.isColor(color)) {
             hint.css('color', color);
         } else {
             hint.addClass(color);

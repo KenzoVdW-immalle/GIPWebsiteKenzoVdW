@@ -1,7 +1,7 @@
 # Welcome
 The front-end framework for developing projects on the web in Windows Metro Style, created and supported by Sergey Pimenov (aka olton) with the massive support and involvement of community. Metro UI CSS developed with the advice of Microsoft to build the user interface and include: general styles, grid, layouts, typography, 20+ components, 300+ built-in icons. Metro UI CSS build with {LESS}. Metro UI CSS is open source and has MIT licensing model.
  
-## Current Version 3.0.15
+## Current Version 3.0.17
 
 ### Install with bower
  bower install metro
@@ -18,30 +18,30 @@ Install-Package Metro.UI.CSS
 ### Public CDN
 
 #### Master branch
-##### CSS
- 
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-responsive.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-rtl.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css
+####CSS
+-  http://cdn.metroui.org.ua/css/metro.min.css
+-  http://cdn.metroui.org.ua/css/metro-colors.min.css 
+-  http://cdn.metroui.org.ua/css/metro-schemes.min.css 
+-  http://cdn.metroui.org.ua/css/metro-icons.min.css 
+-  http://cdn.metroui.org.ua/css/metro-responsive.min.css 
+-  http://cdn.metroui.org.ua/css/metro-rtl.min.css 
+-  http://cdn.metroui.org.ua/css/metro-font-cdn.css - this required for use icons from cdn
 
-##### JS
-
-https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/js/metro.min.js
+####JS
+- http://cdn.metroui.org.ua/js/metro.min.js
 
 #### Develop branch
 ##### CSS
 
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-responsive.min.css 
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-schemes.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-rtl.min.css
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-icons.min.css
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro.min.css
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-responsive.min.css 
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-schemes.min.css
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-rtl.min.css
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/css/metro-icons.min.css
  
 ##### JS
 
-https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/js/metro.min.js
+ - https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/js/metro.min.js
 
 
 ### Whats new in 3.0
