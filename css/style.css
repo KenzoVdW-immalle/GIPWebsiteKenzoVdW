@@ -80,11 +80,12 @@ footer {
     margin-left: 0;
     margin-right: 5%;
     display:inline-block;
-    float: left;
+
 }
 .col.one{
   min-height: 50px;
   width: 95%;
+	margin: 0;
 
 }
 .col.two{
@@ -106,6 +107,7 @@ footer {
 	background-color: #191919;
   color: white;
 min-height: 10vw;
+text-align: center;
 }
 .col.six{
   width: 45%;
@@ -174,7 +176,7 @@ margin-left: 20%;
  .welkomstwoord{
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 0;
+  margin: auto;
   padding: 10px;
 	padding-top: 5px;
   padding-bottom: 5px;
