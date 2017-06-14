@@ -41,6 +41,7 @@ p {
 }
 h3{
  font-family: 'Open Sans', sans-serif;
+ text-align: center;
 }
 details{
 	text-align: left;
@@ -60,7 +61,8 @@ font-family: 'Fjalla One', sans-serif;
 }
 footer {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-top: 100px;
+	margin-bottom: 30px;
   font-family: 'Open Sans', sans-serif;
 }
 /*everything for the grid*/
@@ -73,6 +75,7 @@ footer {
     min-height: 1px;
     float:left;
   font-family: 'Open Sans', sans-serif;
+	margin-left: 50%;
 }
 .col{
     min-height: 80px;
@@ -80,7 +83,6 @@ footer {
     margin-left: 0;
     margin-right: 5%;
     display:inline-block;
-
 }
 .col.one{
   min-height: 50px;
@@ -110,7 +112,8 @@ min-height: 10vw;
 text-align: center;
 }
 .col.six{
-  width: 45%;
+	margin-left: 3%;
+  width: 40%;
   height: 20vw;
   border-style: groove;
 }
