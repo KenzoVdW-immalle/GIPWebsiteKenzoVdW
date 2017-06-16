@@ -66,14 +66,12 @@ footer {
   font-family: 'Open Sans', sans-serif;
 }
 /*everything for the grid*/
-*{
-    box-sizing: border-box;
-}
+
 .row{
     padding: 20px;
     width: 100%;
     min-height: 1px;
-    float:left;
+
   font-family: 'Open Sans', sans-serif;
 	margin-left: 50%;
 }
@@ -90,27 +88,7 @@ footer {
 	margin: 0;
 
 }
-.col.two{
-  margin-left: 10%;
-  width: 80%;
-  background-color: #191919;
-  color: white;
-}
 
-.col.four{
-  width: 20%;
-	background-color: #191919;
-	color: white;
-  text-align: center;
-  min-height: 10vw;
-}
-.col.five{
-  width: 20%;
-	background-color: #191919;
-  color: white;
-min-height: 10vw;
-text-align: center;
-}
 .col.six{
 	margin-left: 3%;
   width: 40%;
@@ -122,24 +100,11 @@ width: 60%;
 height: auto;
 margin-left: 20%;
 }
-.col.eight{
-  margin-left: 5%;
-  width: 80%;
-  margin-right: 15%;
-}
 .col.nine{
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   height: 50vw;
-}
-.col.four:first-child,
-.col.five:first-child{
-    margin-left: 0%;
-}
-.col.four:last-child,
-.col.five:last-child{
-    margin-right: 0px;
 }
 /*grid voor smal scherm */
 @media only screen and (max-width: 720px){
@@ -174,18 +139,6 @@ margin-left: 20%;
 
 .afbeeldingitbiography{
   width: 30%;
-}
-
- .welkomstwoord{
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  margin: auto;
-  padding: 10px;
-	padding-top: 5px;
-  padding-bottom: 5px;
-	font-size: 20px;
-	background-color: #191919;
-  color: white;
 }
 .iframe{
   width: 700px;
